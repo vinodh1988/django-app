@@ -4,17 +4,9 @@
    <link rel="stylesheet" href="{% static 'style.css' %}">
     </head>
 <body>
-  <table class="mytab">
-     <thead>
-        <tr> 
-             <th>Sno</th>
-             <th>Name</th>
-             <th>City</th>
-        </tr>
-     </thead>
-     <tbody>
+ 
         <form method="post">
-            {% crsf_token %}
+            {% csrf_token %}
         <table>
             {{form}}
             <tr>
@@ -24,6 +16,15 @@
             </tr>
         </table>
         </form>
+        <table class="mytab">
+            <thead>
+               <tr> 
+                    <th>Sno</th>
+                    <th>Name</th>
+                    <th>City</th>
+               </tr>
+            </thead>
+            <tbody>
         {% for x in people %}
         <tr>
             <td>{{x.sno}}</td>
