@@ -1,1 +1,1 @@
-from serializers.ProductSerializer import ProductSerializer
+from firstapi.serializers.ProductSerializer import ProductSerializer
