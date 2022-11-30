@@ -5,6 +5,6 @@ from rest_framework.response import Response
 
 class ProductAPI(APIView):
     def get(self,request,pk=None):
-        products=Product.objects.get.all()
-        result=ProductSerializer(products)
-        return Response(result)
+        products=Product.objects.all()
+        result=ProductSerializer(products,many=True)
+        return Response(result.data)
