@@ -13,6 +13,17 @@
         </tr>
      </thead>
      <tbody>
+        <form method="post">
+            {% crsf_token %}
+        <table>
+            {{form}}
+            <tr>
+                <td colspan="2" style="text-align:center"> 
+                    <button type="submit" style="border:none;color:white;background-color:black;">
+                        Add Person</button>
+            </tr>
+        </table>
+        </form>
         {% for x in people %}
         <tr>
             <td>{{x.sno}}</td>
