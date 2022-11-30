@@ -2,3 +2,20 @@ h2{
     background-color: yellow;
     color: green;
 }
+
+.mytab th {
+    background-color: darkblue;
+    color: white;
+}
+
+.mytab td{
+    background-color: lightblue;
+    color: darkblue;
+}
+
+.mytab th,.mytab td{
+    width: 200px;
+    height: 30px;
+    border: 1px solid black;
+    font-family: arial;
+}

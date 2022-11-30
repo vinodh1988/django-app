@@ -1,7 +1,7 @@
 <html>
     <head>
         {% load static %}
-   <link rel="stylesheet" href="{% static 'style.css'}">
+   <link rel="stylesheet" href="{% static 'style.css' %}">
     </head>
 <body>
   <table class="mytab">
@@ -19,6 +19,7 @@
             <td>{{x.name}}</td>
             <td>{{x.city}}</td>
         </tr>
+        {% endfor %}
      </tbody>
   </table>
 </body>
